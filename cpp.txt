@@ -1,0 +1,67 @@
+1、以下三条输出语句分别输出什么？
+    char str1[] = "abc";
+    char str2[] = "abc";
+    const char str3[] = "abc"; 
+    const char str4[] = "abc"; 
+    const char* str5 = "abc";
+const char* str6 = "abc";
+    cout << boolalpha << ( str1==str2 ) << endl; // 输出什么？
+    cout << boolalpha << ( str3==str4 ) << endl; // 输出什么？
+    cout << boolalpha << ( str5==str6 ) << endl; // 输出什么？
+2、求下面函数的返回值。
+    int func(x) 
+    { 
+        int countx = 0; 
+        while(x) 
+        { 
+              countx ++; 
+              x = x&(x-1); 
+         } 
+        return countx; 
+} 
+
+    假定x的值为999，函数返回值是多少？
+3、非C++内建型别 A 和 B，在哪几种情况下B能隐式转化为A？
+    a. class B : public A {……}   
+    b. class B { operator A( ); } 
+    c. class A { A( const B& ); }
+    d. A& operator= ( const B& ); 
+4、以下代码有什么问题？
+   cout << (true?1:"1") << endl;
+5、struct和class的区别？
+6、如何定义纯虚类，纯虚类的作用？
+7、以下反向遍历array数组的方法有什么错误？
+	vector array;
+	array.push_back( 1 );
+	array.push_back( 2 );
+	array.push_back( 3 );
+	for( vector::size_type i=array.size()-1; i>=0; --i ) // 反向遍历array数组
+	{
+        cout << array[i] << endl;
+	}
+
+8、以下代码有什么问题？
+	typedef vector IntArray;
+	IntArray array;
+	array.push_back( 1 );
+	array.push_back( 2 );
+	array.push_back( 2 );
+	array.push_back( 3 );
+
+	for( IntArray::iterator itor=array.begin(); itor!=array.end(); ++itor )
+	{
+		if( 2 == *itor ) array.erase( itor );
+	}
+
+9、 unordered_map和map的区别？
+10、C++中有malloc/free，为什么还有new/delete？
+11、继承的优缺点?
+12、虚函数的实现机制?
+13、如何定义和实现一个类的成员函数为回调函数？举例说明。
+14、什么是主机字节序和网络网络序，以及如何判断主机序是大字节序还是小字节序？
+15、请说出static 和const 关键字尽可能多的作用？
+16、什么是深拷贝和浅拷贝？
+17、什么是智能指针，实现原理？
+18、是否了解epoll，epoll的两种触发是什么。
+19、实现一个lru算法。
+20、如果遇到一个以前完全没接触过的技术，会怎么去学习?
