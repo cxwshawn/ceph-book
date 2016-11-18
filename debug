@@ -1,0 +1,1 @@
+(echo module ceph +p >/sys/kernel/debug/dynamic_debug/control), 
