@@ -1,3 +1,7 @@
 1、use pgtemp  only if up_primary's pglog is less than auth's;
 2、separate pg's info out of OSDMAP,since osdmap only represents osd's
    state or number change!
+   
+3、scrubbing affects user's IO, we can consider continuing scrub after finished IO,
+if more IOs, then consider scrub at other time or scrub other objects!
+
