@@ -1,0 +1,3 @@
+1、use pgtemp  only if up_primary's pglog is less than auth's;
+2、separate pg's info out of OSDMAP,since osdmap only represents osd's
+   state or number change!
