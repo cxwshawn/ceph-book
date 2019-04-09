@@ -1,2 +1,0 @@
-1、读wb返回FLASH_RT_IO_DEFERRED_CONFLICT，正在刷盘，应该进入defer队列，刷完盘后再读；
-2、wbmeta->outside_put_flag != p_tmp_cmd->outside_put_flag inside flag和outside flag区别；
